@@ -1,0 +1,19 @@
+//Get an input number from the user and check whether it is a positive or negative number.
+
+import java.util.*;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a;
+a=sc.nextInt();
+if(a>0){
+System.out.println("Positive number ");
+}
+else if(a<0){
+System.out.println("Negative number ");
+}
+else{
+System.out.println("Neither positive nor negative ");
+}
+}
+}
