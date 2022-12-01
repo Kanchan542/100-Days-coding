@@ -1,0 +1,13 @@
+//Write a program to find ASCII values of a character
+
+import java.util.*;
+class Main{
+public static void main(String args[]){
+ Scanner sc=new Scanner(System.in);
+char ch;
+System.out.println("Enter the varible");
+ ch=sc.next().charAt(0);
+ int ascii=ch;
+ System.out.println(ascii);
+}
+}
