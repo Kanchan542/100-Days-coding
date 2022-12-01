@@ -1,0 +1,16 @@
+//Write a program to find Sum of N natural numbers
+
+import java.util.*;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n;
+n=sc.nextInt();
+int sum=0,temp;
+for(int i=1;i<=n;i++){
+sum=sum+i;
+}
+System.out.println(sum);
+}
+}
+
