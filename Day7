@@ -1,0 +1,42 @@
+//Write a program to find Number of days in a given month of a given year
+import java.util.*;
+class Main
+{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int y,m;
+        System.out.print("Year: ");
+        y=sc.nextInt();
+        System.out.print("Month: ");
+        m=sc.nextInt();
+        
+        if(y%4==0){
+            if(m%2!=0){
+                System.out.println(31);
+            }
+            else{
+                if(m==2){
+                    System.out.println(29);
+                }
+                
+                else{
+                    System.out.println(30);
+                }
+            }
+        }
+        else{
+            if(m%2!=0){
+                System.out.println(31);
+            }
+            else{
+                if(m==2){
+                    System.out.println(28);
+                }
+                
+                else{
+                    System.out.println(30);
+                }
+            }
+        }
+    }
+}
