@@ -1,0 +1,22 @@
+Write a program to Add two fractions
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int x1=sc.nextInt();
+        int y1=sc.nextInt();
+        int x2=sc.nextInt();
+        int y2=sc.nextInt();
+        int x3,y3,result=0;
+        
+        x3=(x1*y2)+(x2*y1);
+        y3=(y1*y2);
+        for(int i=1;i<=x3 && i<=y3;i++){
+            if(x3%i==0 && y3%i==0){
+                result=i;
+            }
+            
+        }
+        System.out.println(x3/result+"/"+y3/result);
+    }
+}
