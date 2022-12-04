@@ -1,0 +1,23 @@
+//Write a program to identify if the number is Armstrong number or not
+class Main
+{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int num,remainder,result=0,num1;
+		num=sc.nextInt();
+		num1=num;
+		while(num1!=0){
+			remainder=num1%10;
+			result+=Math.pow(remainder,3);
+			num1/=10;
+			
+		}
+		if(result==num){
+			System.out.println("armastronge Number ");
+		}
+		else{
+			System.out.println("Not an armstrong: ");
+		}
+		
+	}
+}
