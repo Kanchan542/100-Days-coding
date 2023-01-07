@@ -1,0 +1,12 @@
+//Write a Program to concatenate a string
+import java.util.*;
+class TallentBettle{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+	    String str,str1;
+		str=sc.next();
+		str1=sc.next();
+		System.out.println(str+str1);
+	
+	}
+}
