@@ -1,5 +1,6 @@
 //Day20
 //Write a program to identify if the number is Prime number or not
+import java.util.Scanner;
 class TallentBettle{
 	public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
