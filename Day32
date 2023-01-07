@@ -1,0 +1,13 @@
+//Write a Program to Remove vowels from a string
+ class TallentBettle{
+	 public static void main(String args[]){
+		 Scanner sc=new Scanner(System.in);
+		 String str;
+		 str=sc.next();
+		 String str1="";
+		 str1=str.replaceAll("[aeiou]","");
+		 System.out.println(str1);
+		
+	 }
+ }
+ 
