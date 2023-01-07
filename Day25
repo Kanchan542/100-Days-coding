@@ -1,0 +1,12 @@
+//Write a program to find Area of a circle
+import java.util
+class TallentBettle{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		double area;
+		float radius;
+		radius=sc.nextFloat();
+		area=3.14*radius*radius;
+		System.out.println(area);
+	}
+}
