@@ -1,0 +1,25 @@
+// Write Program to find smallest and largest element in an array
+class TallentBettle{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the length of array: ");
+int n=sc.nextInt();
+int a[]=new int[n];
+System.out.println("Enter the element: ");
+for(int i=0;i<n;i++){
+a[i]=sc.nextInt();
+}
+for(int i=0;i<n-1;i++){
+for(int j=0;j<n-i-1;j++){
+if(a[j]>a[j+1]){
+int temp=a[j];
+a[j]=a[j+1];
+a[j+1]=temp;
+}
+}
+}
+System.out.println("Smallest element is: "+a[0]);
+System.out.println("Largest element is: "+a[n-1]);
+}
+}
