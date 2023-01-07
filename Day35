@@ -1,0 +1,17 @@
+//Write a Program to Count the sum of numbers in a string
+class TallentBettle{
+	public static void main(String args[]){
+		String str="Hello56";	 
+		String str1="0";
+		int sum=0;
+		
+		for(int i=0;i<str.length();i++){
+			char ch=str.charAt(i);
+			if(Character.isDigit(ch)){
+				int a=Integer.parseInt(String.valueOf(ch));
+				sum=sum+a;	
+			}
+		}
+		System.out.println(sum);
+	}
+}
