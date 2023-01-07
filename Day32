@@ -1,4 +1,5 @@
 //Write a Program to Remove vowels from a string
+import java.util.*;
  class TallentBettle{
 	 public static void main(String args[]){
 		 Scanner sc=new Scanner(System.in);
