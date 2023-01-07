@@ -1,0 +1,15 @@
+//Write a Program to reverse a string.
+import java.util.*;
+class TallentBettle
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+	    String str;
+		str=sc.nextLine();
+		StringBuilder str1=new StringBuilder(str);
+		str1.reverse();
+		String result=str1.toString();
+		System.out.println(result);
+	}
+}
