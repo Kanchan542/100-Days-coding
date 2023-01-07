@@ -1,0 +1,17 @@
+//Write a Program to Toggle each character in a string
+import java.io.*;
+class TallentBettle {
+public static void main(String[] args)
+{
+	String str = "Hello";
+	String x = "";
+	for (int i = 0; i < str.length(); i++) {
+	char ch = str.charAt(i);
+	if (Character.isUpperCase(ch))
+		x += Character.toLowerCase(ch);
+	else
+		x += Character.toUpperCase(ch);
+	}
+	System.out.println(x);
+}
+}
