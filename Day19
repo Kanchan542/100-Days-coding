@@ -1,4 +1,5 @@
 //Write a program to identify if the number is Armstrong number or not
+import java.util.Scanner;
 class Main
 {
 	public static void main(String args[]){
