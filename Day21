@@ -1,0 +1,23 @@
+//Day21
+//Write a program to identify if the number is Palindrome or not
+class TallentBettle{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int number=sc.nextInt();
+		int reverse=0,remainder;
+		int temp=number;
+		while(number!=0){
+		remainder=number%10;
+		reverse=reverse*10+remainder;
+		number=number/10;
+		}
+		if(temp==reverse){
+			System.out.println("Number is palindrome: "+reverse);
+		}
+		else{
+			System.out.println("Number is not palindrome ");
+		}
+		
+	}
+}
