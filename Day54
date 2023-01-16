@@ -1,0 +1,44 @@
+//Given an integer array of size N. Write Program to find whether Arrays are disjoint or not. 
+//Two arrays are said to be disjoint if they have no elements in common.
+
+import java.util.*;
+class Main{
+	static boolean Disjoint(int arr1[],int arr2[],int n1,int n2){
+		boolean flag =true;
+		for(int i=0;i<n1;i++){
+			for(int j=0;j<n2;j++){
+				if(arr1[i]==arr2[j]){
+					flag=false;
+				}
+				if(flag==false)
+					break;
+			}
+		}
+		return flag;
+	}
+	public static void main(String args[]) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size of array: ");
+		int n1=sc.nextInt();
+		System.out.println("Enter the element of array: ");
+		int arr1[]=new int[n1];
+		for(int i=0;i<n1;i++){
+			arr1[i]=sc.nextInt();
+		}
+		System.out.println("Enter the size of array: ");
+		int n2=sc.nextInt();
+		System.out.println("Enter the element of array: ");
+		int arr2[]=new int[n2];
+		for(int j=0;j<n2;j++){
+			arr2[j]=sc.nextInt();
+		}
+		if(Disjoint(arr1,arr2,n1,n2)==true){
+			System.out.println("disjoint");
+		}
+		else{
+			System.out.println("Not disjoint");
+		}
+		
+	}
+}
