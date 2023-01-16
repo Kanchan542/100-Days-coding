@@ -1,0 +1,29 @@
+//Write Program to find whether the numbers of an array be made equal
+class TallentBettle{
+	 public static boolean set(int arr[],int n){
+		for(int i=0;i<n;i++){
+			while(arr[i]%2==0)
+				arr[i]/=2;
+			while(arr[i]%3==0)
+				arr[i]/=3;
+			
+		} 
+		for(int i=1;i<n;i++){
+			if(arr[i]!=arr[0]){
+				return false;
+			}
+		}
+		return true;
+		 
+	 }
+	 public static void main(String args[]){
+		int arr[]={50,75,150};
+		int n = arr.length;
+		if(set(arr,n)){
+			System.out.println("Yes");
+		}
+		else{
+			System.out.println("No");
+		}
+	 }
+ }
